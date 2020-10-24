@@ -28,7 +28,7 @@ namespace WebApp.Test
             await AliceClient.CountAsync();
             await AliceClient.CountAsync();
             var account = await (await AliceClient.GetAccountByIdAsync(1)).Response<Account>();
-            if (account.Counter != 5)
+            if (account.Counter != 5) 
                 throw new Exception($"counter is {account.Counter}");
         }
     }

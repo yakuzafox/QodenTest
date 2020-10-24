@@ -30,7 +30,6 @@ namespace WebApp
                 account = await _db.GetOrCreateAccountAsync(id);
                 _cache.AddOrUpdate(account);
             }
-
             return account;
         }
 
